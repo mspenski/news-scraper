@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+#articles-card {
+  background-color: #592A8A;
+  color: #FEC923;
+}
+
+.navbar {
+  background-color: #FEC923;
+  color: #592A8A;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-link,
+.navbar-brand {
+  background-color: #FEC923;
+  color: #592A8A;
+}
+
+.navbar-brand{
+  font-family: serif;
+}
+
+.header {
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-family: serif;
+}

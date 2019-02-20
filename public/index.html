@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Scraper</title>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- local css -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,7 +33,7 @@
           <a class="nav-link" href="#">Saved Articles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Scrape New Articles</a>
+          <a class="nav-link" href="localhost:3000/scrape">Scrape New Articles</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Clear Articles</a>
@@ -43,16 +47,30 @@
 
     <h1 class="header">ECU Reddit Scraper</h3>
 
-      <div class="card" id="articles-card">
-        <!-- <div class="card-header">
+      <!-- <div class="card" id="articles-card">
+        <div class="card-header">
           Featured
-        </div> -->
+        </div>
         <div class="card-body">
           <h5 class="card-title">Title</h5>
           <p class="card-text">Submitted at....</p>
 
         </div>
-      </div>
+      </div> -->
+
+
+      <table id="results">
+        <thead>
+          <tr>
+            <th id="article-title">Title</th>
+            <th id="article-author">link</th>
+            <th id="article-submitted">Submitted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Results from DB here -->
+        </tbody>
+      </table>
   </div>
 
 

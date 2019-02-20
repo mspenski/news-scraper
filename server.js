@@ -19,15 +19,16 @@ axios
     // Select each element in the HTML body from which you want information.
     // NOTE: Cheerio selectors function similarly to jQuery's selectors,
     // but be sure to visit the package's npm page to see how it works
-    $("p.title").each(function (i, element) {
+    $("div.top-matter").each(function (i, element) {
       var title = $(element)
-        .find("a.title").text()
+        .find("a.title")
+        .text();
       var url = $(element)
         .find("a")
         .attr("href");
       var submitted = $(element)
-        .children()
-        .find("p.")
+        .find("p.tagline")
+        .text();
 
 
       // Save these results in an object that we'll push into the results array we defined earlier

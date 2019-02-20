@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+#articles-card {
   background-color: #592A8A;
   color: #FEC923;
 }
@@ -26,6 +27,8 @@ body {
 
 .header {
   margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   text-align: center;
   font-family: serif;
 }

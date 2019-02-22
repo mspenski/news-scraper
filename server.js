@@ -9,6 +9,7 @@ var express = require("express");
 
 var app = express();
 app.use(express.static("public"));
+var PORT = process.env.PORT || 3000;
 
 // Database configuration
 var databaseUrl = "ecuArticles";
@@ -78,6 +79,6 @@ app.get("/all", function (req, res) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log("App running on port 3000!");
 });

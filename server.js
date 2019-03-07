@@ -27,7 +27,7 @@ db.on("error", function (error) {
 // });
 
 // Make a request via axios to grab the HTML body from the site of your choice
-app.get("/scrape", function (req, res) {
+app.get("/", function (req, res) {
 
   axios
     .get("https://old.reddit.com/r/ECU/")
